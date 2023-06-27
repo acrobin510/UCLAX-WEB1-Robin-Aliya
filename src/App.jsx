@@ -7,8 +7,7 @@ function App() {
 
     return (
         <div className="App">
-            <img src={reactLogo} alt="React Logo" width="300" />
-            hi!
+            UCLAX-web1-robin-aliya
         </div>
     );
 }
