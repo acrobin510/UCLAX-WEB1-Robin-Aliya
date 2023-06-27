@@ -7,7 +7,7 @@ function App() {
 
     return (
         <div className="App">
-            UCLAX-web1-robin-aliya update
+            UCLAX-web1-robin-aliya
         </div>
     );
 }
