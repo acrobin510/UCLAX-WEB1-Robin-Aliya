@@ -20,7 +20,8 @@ const SunAndMoon = () => {
   // HTML
   return (
     <SunAndMoonStyled>
-      <h1>Sun and Moon - Whatever</h1>
+      <h1>Sun and Moon</h1>
+      <h2>Are you a sun or a moon?</h2>
       <img
         src={imgSrc}
         onMouseEnter={changeToMoon}
@@ -38,6 +39,9 @@ const SunAndMoonStyled = styled.div`
   h1 {
     font-size: 50px;
     color: teal;
+  }
+  h2{
+    font-family: Arial, Helvetica, sans-serif;
   }
   img {
     border: solid 20px teal;
