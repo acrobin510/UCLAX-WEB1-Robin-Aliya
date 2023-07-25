@@ -6,8 +6,8 @@ import moonSrc from "./images/moon.png";
 
 const SunAndMoon = () => {
     //JavaScript
-
     const [imgSrc, imgSrcUpdate] = useState(sunSrc);
+
     const changeToMoon = () => {
         console.log("MOON");
         imgSrcUpdate(moonSrc);
