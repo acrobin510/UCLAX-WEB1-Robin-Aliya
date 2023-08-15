@@ -74,6 +74,7 @@ const SmallStyled = styled.div`
 
     .mainMenu {
         position: fixed;
+        z-index: 1000;
 
         left: 0px;
         top: 300px;
