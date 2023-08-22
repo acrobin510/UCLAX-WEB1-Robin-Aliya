@@ -2,18 +2,21 @@
 | Fonts
 ---------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+@font-face {
+    font-family: "Gravitas One";
+    src: local ("Gravitas One") url(./GravitasOne.ttf) format("truetype");
+}
 /*---------------------------
 | Foundational
 ---------------------------*/
 html,
 body {
     margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 body {
     overflow-y: scroll;
-    background-color: #014444;
+    background-color: #3c2415;
     min-width: 300px;
 }
 /* gets rid of scroll bar ---------------------------*/
@@ -36,9 +39,10 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", serif;
     margin: 0px 0px 15px;
-    color: #014444;
+    color: #8dd4ef;
+    font-weight: bold;
 }
 p {
     margin: 0px 0px 15px;
@@ -56,6 +60,7 @@ li {
 h1,
 h2 {
     font-weight: 700;
+    font-family: "Gravitas One", serif;
 }
 h3,
 h4 {
@@ -121,11 +126,11 @@ nav.sublinks a {
     text-decoration: none;
     border-radius: 5px;
     padding: 10px 20px;
-    color: white;
-    background-color: #027272;
+    color: #3c2415;
+    background-color: #c49a6c;
 }
 
 nav.sublinks a:hover,
 nav.sublinks a.active {
-    background-color: #014444;
+    background-color: #8dd4ef;
 }

@@ -44,10 +44,10 @@ const Small = () => {
                         Home
                     </NavLink>
                     <NavLink onClick={hideMenu} to={"/staff"}>
-                        Staff
+                        Menu
                     </NavLink>
                     <NavLink onClick={hideMenu} to={"/contact"}>
-                        Contact
+                        Order
                     </NavLink>
                     <NavLink onClick={hideMenu} to={"/course-work"}>
                         Course
@@ -67,7 +67,7 @@ const SmallStyled = styled.div`
     justify-content: center;
 
     .SiteLogo {
-        height: 300px;
+        height: 320px;
         padding: 20px;
         max-width: 330px;
     }
@@ -81,7 +81,7 @@ const SmallStyled = styled.div`
         right: 0px;
         bottom: 0px;
 
-        background-color: #014344;
+        background-color: #3c2415;
 
         a {
             display: block;
