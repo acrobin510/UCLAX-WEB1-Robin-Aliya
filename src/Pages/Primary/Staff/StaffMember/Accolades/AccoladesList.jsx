@@ -15,7 +15,6 @@ const AccoladesList = ({ member }) => {
 
 export default AccoladesList;
 
-const AccoladesListStyled = styled.ul`
-    padding-left: 20px;
-    list-style-type: disc;
+const AccoladesListStyled = styled.div`
+    padding: 10px;
 `;

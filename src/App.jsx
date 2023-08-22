@@ -14,6 +14,7 @@ import CourseWorkLayout from "./Pages/CourseWork/CourseWorkLayout";
 import Essays from "./Pages/CourseWork/Essays/Essays";
 import SunAndMoon from "./Pages/CourseWork/SunAndMoon/SunAndMoon";
 import Responsive from "./Pages/CourseWork/Responsive";
+import Map from "./Pages/CourseWork/Map";
 
 const App = () => {
     return (
@@ -29,6 +30,7 @@ const App = () => {
                     <Route element={<Essays />} path="" />
                     <Route element={<SunAndMoon />} path="sun-and-moon" />
                     <Route element={<Responsive />} path="responsive" />
+                    <Route element={<Map />} path="map" />
                 </Route>
             </Route>
         </Routes>

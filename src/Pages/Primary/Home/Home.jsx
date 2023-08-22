@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Inset from "@/Common/PagesLayout/Inset";
 import Slideshow from "./Slideshow/Slideshow";
 import Tabbed from "./Tabbed/Tabbed";
+import Video from "./Video/Video";
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Inset>
                 <Tabbed />
             </Inset>
+            <Video />
         </HomeStyled>
     );
 };

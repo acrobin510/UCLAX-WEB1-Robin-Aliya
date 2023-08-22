@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import googleMapReact from "google-map-react";
 
 /* Media Query ---------------------------*/
 import { breakpoints } from "@/Common/useMediaQuery";
@@ -11,6 +12,7 @@ const TabContent = ({ curTab }) => {
             </div>
             <div className="column2">
                 <h3>{curTab.title}</h3>
+                <div></div>
                 <div dangerouslySetInnerHTML={{ __html: curTab.text }}></div>
             </div>
         </TabContentStyled>
