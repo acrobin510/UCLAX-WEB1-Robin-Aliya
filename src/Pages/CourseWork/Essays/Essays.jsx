@@ -253,7 +253,102 @@ const Essays = () => {
                 </ul>
             </Essay>
             <Essay question="Q7:Define the following Agile roles: Product Owner, Product Manager, Business Analyst, Scrum Master, UX designer, Developer/Engineer, QA/SDET, and DevOps.">
-                4.This is my answer
+                <p>Product Manager</p>
+                <ul>
+                    <li>balance business, tech, and UX needs</li>
+                    <li>in charge of the product vision</li>
+                    <li>Connect directly with stakeholders/customers</li>
+                </ul>
+                <p>Product Owner</p>
+                <ul>
+                    <li>Owns the entire product from start to finish</li>
+                    <li>
+                        Usually mediates between product manager and software
+                        team
+                    </li>
+                </ul>
+                <p>Business Analyst</p>
+                <ul>
+                    <li>
+                        Analyze data of how customers are interacting with the
+                        app
+                    </li>
+                    <li>Identify ways to make the product better</li>
+                    <li>
+                        Some overlap with UX - UX predicts what customers will
+                        need and business analysts see what customers need after
+                        launch
+                    </li>
+                </ul>
+                <p>Scrum Master</p>
+                <p>
+                    What is scrum? Scrum is a way of organizing and getting work
+                    done as a team that was created in response to the typical
+                    "waterfall" method where the product manager/owner makes a
+                    promise to a client without developer input and then tells
+                    the developers what to make without having an indepth
+                    understanding of the possibilities. With scrum everyone in
+                    the team gets a say and everything is done incrementally
+                    with lots of feedback and improvement along the way.
+                </p>
+                <ul>
+                    <li>help facilitate agile processes (AKA Scrum)</li>
+                    <li>
+                        Help make sure the process is working - connect people
+                        who are blocked with those that can help them
+                    </li>
+                </ul>
+                <p>UX Designer</p>
+                <ul>
+                    <li>
+                        Deals directly with how users interact with teh
+                        application aka User needs
+                    </li>
+                    <li>They make prototypes</li>
+                    <li>
+                        They create user stories/types (example: Jane is a young
+                        working woman who enjoys yoga and has a dog)
+                    </li>
+                    <li>They deal with the psychology of the users</li>
+                    <li>
+                        Often overlaps with graphic design - if separate graphic
+                        design focus on the visual asthetics while UX focuses
+                        more on the psychology of the user/what the user needs
+                    </li>
+                </ul>
+                <p>Developer/Engineer</p>
+                <ul>
+                    <li>
+                        Programmers (frontend, backend, fullstack developers)
+                    </li>
+                    <li>translate comps/prototypes into app</li>
+                </ul>
+                <p>QA/SDET</p>
+                <ul>
+                    <li>QA: Quality Assurance</li>
+                    <li>
+                        SDET: Software Development Engineer Test (QA on steroids
+                        - has to know how to code and fix problems not just
+                        point them out)
+                    </li>
+                    <li>
+                        make sure there are no problems with the product before
+                        it launches
+                    </li>
+                    <li>They're kinda like a proofreader</li>
+                    <li>They track bugs and run tests</li>
+                </ul>
+                <p>DevOps</p>
+                <ul>
+                    <li>Combines the works Development and Operations</li>
+                    <li>Mix of developers, IT, QA and Security</li>
+                    <li>Handling architecture and softawre for deployment</li>
+                    <li>
+                        do rapid cycles of deployment and the response from
+                        users
+                    </li>
+                    <li>sometimes called engineers</li>
+                </ul>
             </Essay>
         </EssaysStyled>
     );
