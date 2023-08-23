@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 /* Images ---------------------------*/
 import logoUrl from "./Logo_Sticker.svg";
@@ -7,7 +8,9 @@ import logoUrl from "./Logo_Sticker.svg";
 const SiteLogo = () => {
     return (
         <SiteLogoStyled className="SiteLogo">
-            <img src={logoUrl} alt="CrossFit Decimate Logo" />
+            <NavLink to={"/"} end>
+                <img src={logoUrl} alt="CrossFit Decimate Logo" />
+            </NavLink>
         </SiteLogoStyled>
     );
 };
