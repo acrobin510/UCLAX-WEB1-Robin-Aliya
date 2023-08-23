@@ -22,7 +22,7 @@ const Form = ({ getSubmissions }) => {
         inputEmailUpdate(theValue);
     };
 
-    //NAME
+    //Message
     const [inputMessage, inputMessageUpdate] = useState(
         "Will the real shady please stand up."
     );
