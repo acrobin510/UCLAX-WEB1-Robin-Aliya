@@ -13,6 +13,7 @@ export const staffData = [
         image: image1,
         name: "Green Milk Tea",
         cost: "$5.20/$8.50",
+        check: false,
         accolades: [
             "Indulge in our revitalizing Green Milk Tea, a harmonious fusion of vibrant green tea and velvety milk. Sip on this refreshing and subtly sweet concoction, celebrating the balance of earthy tones and creamy textures in every delightful sip.",
         ],
@@ -22,6 +23,7 @@ export const staffData = [
         image: image2,
         name: "Black Milk Tea",
         cost: "$5.20/$8.50",
+        check: false,
         accolades: [
             "Black milk tea is a classic and comforting beverage made from strong brewed black tea leaves and creamy milk, resulting in a rich, bold flavor with a hint of sweetness. This beloved tea variation is a timeless favorite enjoyed both hot and cold, offering a satisfying blend of warmth and refreshment.",
         ],
@@ -31,6 +33,7 @@ export const staffData = [
         image: image3,
         name: "Coconut Milk Tea",
         cost: "$5.20/$8.50",
+        check: false,
         accolades: [
             "Experience a tropical escape with our Coconut Milk Tea, a delightful blend of luscious coconut flavors and silky milk, creating a creamy and exotic beverage that transports you to paradise in every sip. Embrace the soothing combination of coconut and tea, offering a unique twist on traditional bubble tea at our cafe.",
         ],
@@ -40,6 +43,7 @@ export const staffData = [
         image: image4,
         name: "Taro Milk Tea",
         cost: "$5.20/$8.50",
+        check: false,
         accolades: [
             "Discover pure purple bliss with our Taro Milk Tea, a captivating blend of earthy taro root and creamy milk, resulting in a velvety-smooth, subtly sweet indulgence that's as visually enchanting as it is delicious.",
         ],
@@ -49,6 +53,7 @@ export const staffData = [
         image: image5,
         name: "Thai Milk Tea",
         cost: "$5.20/$8.50",
+        check: false,
         accolades: [
             "Savor the enchanting flavors of our Thai Milk Tea, a unique fusion of robust black tea and aromatic spices combined with the smoothness of condensed milk, resulting in a harmonious balance of boldness and sweetness that's sure to captivate your taste buds.",
         ],
@@ -58,6 +63,7 @@ export const staffData = [
         image: image6,
         name: "Honey Green Tea",
         cost: "$4.20/$6.00",
+        check: false,
         accolades: [
             "Experience the delicate harmony of nature in our Honey Green Tea, a blend of refreshing green tea leaves kissed by the sweetness of golden honey, creating a soothing and revitalizing beverage that's as comforting as it is invigorating. Let each sip transport you to a tranquil oasis of flavors, where the natural goodness of tea and honey come together in perfect unity.",
         ],
@@ -67,6 +73,7 @@ export const staffData = [
         image: image7,
         name: "Black Tea",
         cost: "$4.20/$6.00",
+        check: false,
         accolades: [
             "Savor the timeless allure of our Black Tea, a classic infusion that embodies depth and character in every sip at POP Bubble Milk Tea Cafe.",
         ],
@@ -76,6 +83,7 @@ export const staffData = [
         image: image8,
         name: "Lychee Green Tea",
         cost: "$4.20/$6.00",
+        check: false,
         accolades: [
             "Experience the refreshing fusion of floral lychee and rejuvenating green tea in every delightful sip.",
         ],
