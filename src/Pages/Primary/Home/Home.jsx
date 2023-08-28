@@ -9,7 +9,6 @@ import Video from "./Video/Video";
 const Home = () => {
     return (
         <HomeStyled className="Home">
-            {" "}
             <h1>Home</h1>
             <Slideshow />
             <Inset>

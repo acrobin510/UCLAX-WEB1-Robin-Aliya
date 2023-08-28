@@ -8,7 +8,7 @@ const Checkboxes = () => {
         checkedUpdate(!checked);
     };
 
-    const Checkbox = ({ value, onChange }) => {
+    const Checkbox = ({ label, value, onChange }) => {
         return <input type="checkbox" checked={value} onChange={onChange} />;
     };
     return (

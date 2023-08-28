@@ -4,14 +4,14 @@ import styled from "styled-components";
 import axios from "axios";
 
 /* Components ---------------------------*/
-import Drinks from "./Drinks";
+import Checkbox from "./Checkboxes";
 
 /* Data ---------------------------*/
 import { staffData } from "../Staff/staffData";
 
 const Form = ({ getSubmissions }) => {
     //NAME
-    const [inputName, inputNameUpdate] = useState("Slim shady");
+    const [inputName, inputNameUpdate] = useState("");
     /* (e) means event object ---------------------------*/
     const inputNameOnChange = (e) => {
         const theValue = e.target.value;
@@ -20,7 +20,7 @@ const Form = ({ getSubmissions }) => {
     };
 
     //EMAIL
-    const [inputEmail, inputEmailUpdate] = useState("Slim@shady.com");
+    const [inputEmail, inputEmailUpdate] = useState("");
     /* (e) means event object ---------------------------*/
     const inputEmailOnChange = (e) => {
         const theValue = e.target.value;
@@ -29,9 +29,7 @@ const Form = ({ getSubmissions }) => {
     };
 
     //Message
-    const [inputMessage, inputMessageUpdate] = useState(
-        "Will the real shady please stand up."
-    );
+    const [inputMessage, inputMessageUpdate] = useState("");
     /* (e) means event object ---------------------------*/
     const inputMessageOnChange = (e) => {
         const theValue = e.target.value;
@@ -39,61 +37,21 @@ const Form = ({ getSubmissions }) => {
         inputMessageUpdate(theValue);
     };
 
-    /* Checkboxes Method 1 ---------------------------*/
+    //Checkboxes
+    const [checked, checkedUpdate] = useState(false);
 
-    const handleChange = (id) => {
-        setCheckboxes((prev) => {
-            if (drink.id === id) {
-                return { ...drink, check: !drink.check };
-            }
-        });
-    };
-
-    const renderCheckboxes = () => {
-        return staffData.map((drink) => (
-            <div className="options">
-                <div className="drink" key={drink.id}>
-                    <div className="drinkInput">
-                        <input
-                            type="checkbox"
-                            value={drink.check}
-                            id={drink.name}
-                        />
-                    </div>
-                    <label className="drink"> {drink.name} </label>
-                    <br />
-                    <div className="toppings">{}</div>
-                </div>
-            </div>
-        ));
-    };
-
-    const renderOptions = () => {
-        return staffData.map((drink) => {
-            if (drink.check) {
-                return <span>'topping'</span>;
+    const checkedOnChange = (e) => {
+        checkedUpdate(!checked);
+        const theValue = e.target.id;
+        {
+            if (e.target.checked) {
+                console.log({ theValue });
             } else {
-                return null;
+                console.log("unchecked");
             }
-        });
+        }
     };
-    /* Checkboxes Method 2 ---------------------------*/
-    /*const [checkedState, setCheckedState] = useState(
-        new Array(staffData.length).fill(false)
-    );
 
-    const handleOnChange = (position) => {
-        const updateCheckedState = checkedState.map((item, index) =>
-            index === position ? !item : item
-        );
-
-        setCheckedState(updateCheckedState);
-
-        const showOptions = updateCheckedState.filter((currentState) => {
-            if (currentState === true) return "topping";
-        }, null);
-    };
-*/
     const onSubmit = async (e) => {
         e.preventDefault();
 
@@ -120,6 +78,7 @@ const Form = ({ getSubmissions }) => {
                     id="name"
                     value={inputName}
                     onChange={inputNameOnChange}
+                    placeholder="Your Name"
                 />
             </div>
 
@@ -133,6 +92,7 @@ const Form = ({ getSubmissions }) => {
                     id="email"
                     value={inputEmail}
                     onChange={inputEmailOnChange}
+                    placeholder="Your Email"
                 />
             </div>
             {/* DRINKS*/}
@@ -140,26 +100,85 @@ const Form = ({ getSubmissions }) => {
                 <label className="l1" htmlFor="drinks">
                     Drinks
                 </label>
-                {/*<ul className="drinks-list">
-                    {staffData.map(({ name }, index) => {
-                        return (
-                            <li key={index}>
-                                <div className="drinks-list-item">
-                                    <input
-                                        type="checkbox"
-                                        id={name}
-                                        name={name}
-                                        checked={checkedState[index]}
-                                        onChange={() => handleOnChange(index)}
-                                    />
-                                    <label htmlFor={name}>{name}</label>
-                                </div>
-                            </li>
-                        );
-                    })}
-                </ul>*/}
-                {renderCheckboxes()}
-                {renderOptions()}
+                <div className="drinks">
+                    <input
+                        type="checkbox"
+                        id="green-milk-tea"
+                        value={checked}
+                        onChange={checkedOnChange}
+                    />
+                    Green Milk Tea
+                </div>
+                <br />
+                <div className="drinks">
+                    <input
+                        type="checkbox"
+                        id="black-milk-tea"
+                        value={checked}
+                        onChange={checkedOnChange}
+                    />
+                    Black Milk Tea
+                </div>
+                <br />
+                <div className="drinks">
+                    <input
+                        type="checkbox"
+                        id="coconut-milk-tea"
+                        value={checked}
+                        onChange={checkedOnChange}
+                    />
+                    Coconut Milk Tea
+                </div>
+                <br />
+                <div className="drinks">
+                    <input
+                        type="checkbox"
+                        id="taro-milk-tea"
+                        value={checked}
+                        onChange={checkedOnChange}
+                    />
+                    Taro Milk Tea
+                </div>
+                <br />
+                <div className="drinks">
+                    <input
+                        type="checkbox"
+                        id="thai-milk-tea"
+                        value={checked}
+                        onChange={checkedOnChange}
+                    />
+                    Thai Milk Tea
+                </div>
+                <br />
+                <div className="drinks">
+                    <input
+                        type="checkbox"
+                        id="honey-green-tea"
+                        value={checked}
+                        onChange={checkedOnChange}
+                    />
+                    Honey Green Tea
+                </div>
+                <br />
+                <div className="drinks">
+                    <input
+                        type="checkbox"
+                        id="black-tea"
+                        value={checked}
+                        onChange={checkedOnChange}
+                    />
+                    Black Tea
+                </div>
+                <br />
+                <div className="drinks">
+                    <input
+                        type="checkbox"
+                        id="lychee-green-tea"
+                        value={checked}
+                        onChange={checkedOnChange}
+                    />
+                    Lychee Green Tea
+                </div>
             </div>
 
             {/* Message */}
@@ -172,6 +191,7 @@ const Form = ({ getSubmissions }) => {
                     id="message"
                     value={inputMessage}
                     onChange={inputMessageOnChange}
+                    placeholder="50% sweetness..."
                 />
             </div>
             <p></p>
@@ -213,9 +233,12 @@ const FormStyled = styled.form`
     textarea {
         height: 150px;
     }
+    .drinks {
+        color: #3c2415;
+    }
 
     button {
-        background-color: teal;
+        background-color: #8dd4ef;
         padding: 10px 5px;
         color: white;
         width: 150px;
@@ -226,11 +249,11 @@ const FormStyled = styled.form`
 
         &:hover,
         &:focus {
-            background-color: #015353;
+            background-color: #75d0f5;
         }
 
         &:active {
-            background-color: #002020;
+            background-color: #ffa8db;
         }
     }
 `;
