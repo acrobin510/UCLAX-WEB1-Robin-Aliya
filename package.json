@@ -3,11 +3,14 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
+    "homepage": "https://{acrobin510.github.io/UCLAX-WEB1-Robin-Aliya",
     "scripts": {
         "start": "vite",
         "build": "vite build",
         "server": "json-server --watch ./src/api-server/emails-db.json --port 4059",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "predeploy": "npm run build",
+        "deploy": "git push origin master && gh-pages -d build"
     },
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -15,6 +18,7 @@
         "@fortawesome/react-fontawesome": "^0.2.0",
         "axios": "^1.4.0",
         "dom": "^0.0.3",
+        "gh-pages": "^6.0.0",
         "google-map-react": "^2.2.1",
         "json-server": "^0.17.3",
         "react": "^18.2.0",

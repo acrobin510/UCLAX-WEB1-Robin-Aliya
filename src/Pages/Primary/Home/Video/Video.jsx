@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import HoverVideoPlayer from "react-hover-video-player";
 
+//https://github.com/Gyanreyer/react-hover-video-player
 const Video = () => {
     function MyComponent() {
         return (

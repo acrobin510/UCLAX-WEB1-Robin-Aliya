@@ -1,46 +1,22 @@
 {
-  "submissions": [
-    {
-      "id": "2b009fa2-9ebc-4ea0-ad9e-84c94b0c8e51",
-      "name": "Mitch",
-      "email": "meatch@me.com",
-      "message": "Some message would go here."
-    },
-    {
-      "id": "931b2b60-24de-4ec8-9f1f-aafd17f0a404",
-      "name": "George",
-      "email": "george@me.com",
-      "message": "Another message"
-    },
-    {
-      "id": "9792672f-f6cb-4b29-98c4-5f45ba24b66b",
-      "name": "Tan",
-      "email": "tan@me.com",
-      "message": "A message from Tan"
-    },
-    {
-      "id": "68b84d6a-299b-4359-923a-1b230cf0cd62",
-      "name": "Slim shady",
-      "email": "Slim@shady.comgsdfds",
-      "message": "Will the real shady please stand up."
-    },
-    {
-      "id": "a3603aef-8647-4b6f-a550-2d42e693c637",
-      "name": "Slim shady",
-      "email": "Slim@shady.com",
-      "message": "Will the real shady please stand up."
-    },
-    {
-      "id": "df83c613-90c8-4e8d-9de4-495c7d450619",
-      "name": "",
-      "email": "",
-      "message": ""
-    },
-    {
-      "id": "2a9abcd7-f383-4a11-b351-e60965f27cdf",
-      "name": "",
-      "email": "",
-      "message": ""
-    }
-  ]
+    "submissions": [
+        {
+            "id": "2b009fa2-9ebc-4ea0-ad9e-84c94b0c8e51",
+            "name": "Mitch",
+            "email": "meatch@me.com",
+            "message": "Some message would go here."
+        },
+        {
+            "id": "931b2b60-24de-4ec8-9f1f-aafd17f0a404",
+            "name": "George",
+            "email": "george@me.com",
+            "message": "Another message"
+        },
+        {
+            "id": "9792672f-f6cb-4b29-98c4-5f45ba24b66b",
+            "name": "Tan",
+            "email": "tan@me.com",
+            "message": "A message from Tan"
+        }
+    ]
 }
