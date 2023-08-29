@@ -38,17 +38,18 @@ const Form = ({ getSubmissions }) => {
     };
 
     //Checkboxes
-    const [checked, checkedUpdate] = useState(false);
+    const [checked, checkedUpdate] = useState([]);
 
     const checkedOnChange = (e) => {
-        checkedUpdate(!checked);
         const theValue = e.target.id;
-        {
-            if (e.target.checked) {
-                console.log({ theValue });
-            } else {
-                console.log("unchecked");
+        if (e.target.checked) {
+            const exists = checked.find((c) => c === theValue);
+            if (!exists) {
+                checkedUpdate([...checked, theValue]);
             }
+        } else {
+            const filtered = checked.filter((c) => c !== theValue);
+            checkedUpdate(filtered);
         }
     };
 
@@ -60,6 +61,7 @@ const Form = ({ getSubmissions }) => {
             name: inputName,
             email: inputEmail,
             message: inputMessage,
+            checked: checked,
         };
 
         await axios.post("http://localhost:4059/submissions", postData);
@@ -104,7 +106,6 @@ const Form = ({ getSubmissions }) => {
                     <input
                         type="checkbox"
                         id="green-milk-tea"
-                        value={checked}
                         onChange={checkedOnChange}
                     />
                     Green Milk Tea
@@ -114,7 +115,6 @@ const Form = ({ getSubmissions }) => {
                     <input
                         type="checkbox"
                         id="black-milk-tea"
-                        value={checked}
                         onChange={checkedOnChange}
                     />
                     Black Milk Tea

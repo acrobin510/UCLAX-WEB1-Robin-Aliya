@@ -4,6 +4,10 @@ const Submission = ({ submission }) => {
     return (
         <SubmissionStyled className="Submission">
             {submission.name} :: {submission.email} :: {submission.message}
+            {submission.checked &&
+                submission.checked.map((c, idx) => {
+                    return <span key={idx}>{c},</span>;
+                })}
         </SubmissionStyled>
     );
 };

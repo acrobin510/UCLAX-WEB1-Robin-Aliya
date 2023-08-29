@@ -26,12 +26,12 @@ const App = () => {
                     <Route element={<Contact />} path="contact" />
                 </Route>
 
-                <Route element={<CourseWorkLayout />} path="course-work">
+                {/*<Route element={<CourseWorkLayout />} path="course-work">
                     <Route element={<Essays />} path="" />
                     <Route element={<SunAndMoon />} path="sun-and-moon" />
                     <Route element={<Responsive />} path="responsive" />
                     <Route element={<Map />} path="map" />
-                </Route>
+                </Route>*/}
             </Route>
         </Routes>
     );
