@@ -102,82 +102,90 @@ const Form = ({ getSubmissions }) => {
                 <label className="l1" htmlFor="drinks">
                     Drinks
                 </label>
-                <div className="drinks">
-                    Green Milk Tea
+                <div className="drink">
                     <input
                         type="checkbox"
                         id="green-milk-tea"
                         onChange={checkedOnChange}
+                        className="check"
                     />
+                    Green Milk Tea
                 </div>
                 <br />
-                <div className="drinks">
-                    Black Milk Tea
+                <div className="drink">
                     <input
                         type="checkbox"
                         id="black-milk-tea"
                         onChange={checkedOnChange}
+                        className="check"
                     />
+                    Black Milk Tea
                 </div>
                 <br />
-                <div className="drinks">
-                    Coconut Milk Tea
+                <div className="drink">
                     <input
                         type="checkbox"
                         id="coconut-milk-tea"
                         value={checked}
                         onChange={checkedOnChange}
+                        className="check"
                     />
+                    Coconut Milk Tea
                 </div>
                 <br />
-                <div className="drinks">
-                    Taro Milk Tea
+                <div className="drink">
                     <input
                         type="checkbox"
                         id="taro-milk-tea"
                         value={checked}
                         onChange={checkedOnChange}
+                        className="check"
                     />
+                    Taro Milk Tea
                 </div>
                 <br />
-                <div className="drinks">
-                    Thai Milk Tea
+                <div className="drink">
                     <input
                         type="checkbox"
                         id="thai-milk-tea"
                         value={checked}
                         onChange={checkedOnChange}
+                        className="check"
                     />
+                    Thai Milk Tea
                 </div>
                 <br />
-                <div className="drinks">
-                    Honey Green Tea
+                <div className="drink">
                     <input
                         type="checkbox"
                         id="honey-green-tea"
                         value={checked}
                         onChange={checkedOnChange}
+                        className="check"
                     />
+                    Honey Green Tea
                 </div>
                 <br />
-                <div className="drinks">
-                    Black Tea
+                <div className="drink">
                     <input
                         type="checkbox"
                         id="black-tea"
                         value={checked}
                         onChange={checkedOnChange}
+                        className="check"
                     />
+                    Black Tea
                 </div>
                 <br />
-                <div className="drinks">
-                    Lychee Green Tea
+                <div className="drink">
                     <input
                         type="checkbox"
                         id="lychee-green-tea"
                         value={checked}
                         onChange={checkedOnChange}
+                        className="check"
                     />
+                    Lychee Green Tea
                 </div>
             </div>
             {/* Toppings */}
@@ -186,39 +194,43 @@ const Form = ({ getSubmissions }) => {
                     Add-Ins
                 </label>
                 <div className="topping">
-                    Boba Pearls
                     <input
                         type="checkbox"
                         id="boba-pearls"
                         onChange={checkedOnChange}
+                        className="check"
                     />
+                    Boba Pearls
                 </div>
                 <br />
                 <div className="topping">
-                    Lychee Jelly
                     <input
                         type="checkbox"
                         id="lychee-jelly"
                         onChange={checkedOnChange}
+                        className="check"
                     />
+                    Lychee Jelly
                 </div>
                 <br />
                 <div className="topping">
-                    Custard Pudding
                     <input
                         type="checkbox"
                         id="custard-pudding"
                         onChange={checkedOnChange}
+                        className="check"
                     />
+                    Custard Pudding
                 </div>
                 <br />
                 <div className="topping">
-                    Rainbow Jelly
                     <input
                         type="checkbox"
                         id="rainbow-jelly"
                         onChange={checkedOnChange}
+                        className="check"
                     />
+                    Rainbow Jelly
                 </div>
                 <br />
             </div>
@@ -255,17 +267,18 @@ const FormStyled = styled.form`
     .l1 {
         font-weight: bold;
         display: block;
+        font-size: 20px;
         margin-bottom: 5px;
-        color: #3c2415;
+        color: #ffa8db;
     }
 
     input,
     textarea {
-        font-size: 20px;
+        font-size: 15px;
         padding: 10px;
         width: 100%;
         background-color: #eee;
-        border: solid 1 px #999;
+        border: 0px;
 
         &:focus {
             background-color: white;
@@ -275,9 +288,17 @@ const FormStyled = styled.form`
         height: 150px;
     }
 
-    .drinks,
+    .check {
+        width: 20px;
+        position: relative;
+    }
+
+    .drink,
     .topping {
         color: #3c2415;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 5px;
     }
 
     button {
@@ -292,7 +313,7 @@ const FormStyled = styled.form`
 
         &:hover,
         &:focus {
-            background-color: #75d0f5;
+            background-color: #64cbf5;
         }
 
         &:active {
