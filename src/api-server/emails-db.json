@@ -19,13 +19,14 @@
       "message": "A message from Tan"
     },
     {
-      "id": "713d1075-97e1-4397-a3e6-e06bb12a0058",
-      "name": "",
-      "email": "",
-      "message": "",
+      "id": "532ececa-a569-4284-ad99-a1c7f4a5cf19",
+      "name": "hi",
+      "email": "something@stuff.com",
+      "message": "no ice",
       "checked": [
         "green-milk-tea",
-        "black-milk-tea"
+        "black-milk-tea",
+        "boba-pearls"
       ]
     }
   ]

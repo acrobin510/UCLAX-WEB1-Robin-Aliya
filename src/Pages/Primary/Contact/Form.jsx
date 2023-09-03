@@ -103,84 +103,125 @@ const Form = ({ getSubmissions }) => {
                     Drinks
                 </label>
                 <div className="drinks">
+                    Green Milk Tea
                     <input
                         type="checkbox"
                         id="green-milk-tea"
                         onChange={checkedOnChange}
                     />
-                    Green Milk Tea
                 </div>
                 <br />
                 <div className="drinks">
+                    Black Milk Tea
                     <input
                         type="checkbox"
                         id="black-milk-tea"
                         onChange={checkedOnChange}
                     />
-                    Black Milk Tea
                 </div>
                 <br />
                 <div className="drinks">
+                    Coconut Milk Tea
                     <input
                         type="checkbox"
                         id="coconut-milk-tea"
                         value={checked}
                         onChange={checkedOnChange}
                     />
-                    Coconut Milk Tea
                 </div>
                 <br />
                 <div className="drinks">
+                    Taro Milk Tea
                     <input
                         type="checkbox"
                         id="taro-milk-tea"
                         value={checked}
                         onChange={checkedOnChange}
                     />
-                    Taro Milk Tea
                 </div>
                 <br />
                 <div className="drinks">
+                    Thai Milk Tea
                     <input
                         type="checkbox"
                         id="thai-milk-tea"
                         value={checked}
                         onChange={checkedOnChange}
                     />
-                    Thai Milk Tea
                 </div>
                 <br />
                 <div className="drinks">
+                    Honey Green Tea
                     <input
                         type="checkbox"
                         id="honey-green-tea"
                         value={checked}
                         onChange={checkedOnChange}
                     />
-                    Honey Green Tea
                 </div>
                 <br />
                 <div className="drinks">
+                    Black Tea
                     <input
                         type="checkbox"
                         id="black-tea"
                         value={checked}
                         onChange={checkedOnChange}
                     />
-                    Black Tea
                 </div>
                 <br />
                 <div className="drinks">
+                    Lychee Green Tea
                     <input
                         type="checkbox"
                         id="lychee-green-tea"
                         value={checked}
                         onChange={checkedOnChange}
                     />
-                    Lychee Green Tea
                 </div>
             </div>
-
+            {/* Toppings */}
+            <div className="control-group">
+                <label className="l1" htmlFor="toppings">
+                    Add-Ins
+                </label>
+                <div className="topping">
+                    Boba Pearls
+                    <input
+                        type="checkbox"
+                        id="boba-pearls"
+                        onChange={checkedOnChange}
+                    />
+                </div>
+                <br />
+                <div className="topping">
+                    Lychee Jelly
+                    <input
+                        type="checkbox"
+                        id="lychee-jelly"
+                        onChange={checkedOnChange}
+                    />
+                </div>
+                <br />
+                <div className="topping">
+                    Custard Pudding
+                    <input
+                        type="checkbox"
+                        id="custard-pudding"
+                        onChange={checkedOnChange}
+                    />
+                </div>
+                <br />
+                <div className="topping">
+                    Rainbow Jelly
+                    <input
+                        type="checkbox"
+                        id="rainbow-jelly"
+                        onChange={checkedOnChange}
+                    />
+                </div>
+                <br />
+            </div>
             {/* Message */}
             <div className="control-group">
                 <label className="l1" htmlFor="message">
@@ -233,7 +274,9 @@ const FormStyled = styled.form`
     textarea {
         height: 150px;
     }
-    .drinks {
+
+    .drinks,
+    .topping {
         color: #3c2415;
     }
 
